@@ -1,0 +1,16 @@
+version: '2.2'
+
+services:
+
+  filegator:
+    image: filegator:v4
+    hostname: filegator
+    container_name: filegator
+    ports:
+      - 8281:80
+      - 4444:443
+    volumes:
+      - $PWD/conf/apache2:/etc/apache2
+      - $PWD/conf/var/www/:/var/www/
+      # - "your local bind mount":/var/www/filegator/repository
+    restart: unless-stopped
