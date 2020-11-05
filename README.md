@@ -8,7 +8,7 @@ Some finesse is required for more fine grain control before getting into a full 
 
 1 - run the container with a bind or volume mount to /temp or whatever you want to give a dir name on the container to be.
 
-2 - docker exec -it "yourcontainername" /bain/bash
+2 - docker exec -it "yourcontainername" /bin/bash
 
 3 - copy the /etc/apache2 folder and /var/www directories to the folder above e.g. /temp
 
